@@ -31,9 +31,10 @@ app.get('/api/jobs', (req, res) => {
   //  res.send(jobs)
   pool.query('select * from jobs', function(error, result){
     const info = result[0].info
-    const data = JSON.parse(info)
+    let data = JSON.parse(info)
     data.id = result[0].id
-    console.log(typeof data.id)
+   
+    // console.log(typeof data.id)
     res.send(data)
      
   })
