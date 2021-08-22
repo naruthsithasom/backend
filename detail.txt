@@ -1,5 +1,5 @@
 npm i request express cors lodash 
-npm i mysql-server
+npm i mysql-server mysql
 npm i sequelize mysql2
 npm i sequelize-cli
 npm i ejs body-parser cookie-parser
