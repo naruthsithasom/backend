@@ -1,5 +1,5 @@
-npm
-request express cors
-sequelize mysql2
-sequelize-cli
-ejs body-parser cookie-parser
+npm i request express cors lodash 
+npm i mysql-server
+npm i sequelize mysql2
+npm i sequelize-cli
+npm i ejs body-parser cookie-parser
