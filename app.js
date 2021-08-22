@@ -19,8 +19,11 @@ app.get('/insert', insertJobs)
 app.post('/insert', bodyParser ,saveJobs)
 
 app.get('/api/jobs', (req, res) => {
-  res.header('Access-Control-Allow-Origin','application/json')
-  res.send(jobs)
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true); 
+   res.send(jobs)
 })
 
 function insertJobs(req, res){
