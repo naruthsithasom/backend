@@ -1,0 +1,5 @@
+npm
+request express cors
+sequelize mysql2
+sequelize-cli
+ejs body-parser cookie-parser
