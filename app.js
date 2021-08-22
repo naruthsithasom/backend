@@ -30,10 +30,11 @@ app.get('/api/jobs', (req, res) => {
   // res.setHeader('Access-Control-Allow-Credentials', true); 
   //  res.send(jobs)
   pool.query('select * from jobs', function(error, result){
-    const Json = result[0].info
-    const data = JSON.parse(Json)
-    // console.log(data)
-      res.send(data)
+    const info = result[0].info
+    const data = JSON.parse(info)
+    data.id = result[0].id
+    console.log(typeof data.id)
+    res.send(data)
      
   })
 })
