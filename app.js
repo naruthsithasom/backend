@@ -14,7 +14,8 @@ app.get('/insert', insertJobs)
 app.post('/insert', bodyParser ,saveJobs)
 
 app.get('/api/jobs', (req, res) => {
-  res.send(jobs)
+  res.header('Access-Control-Allow-Origin','*')
+   res.send(jobs)
 })
 
 app.listen(8000, () => {
