@@ -11,9 +11,10 @@
     <form action="" method="post">
 
 
-    <label for="">title</label>
+    <p for="">title</p>
     <input name="title"/>
-    <label>level</label>
+    <br>
+    <p>level</p>
     <select name="level" id="">
       <option value="All Levels">All Levels</option>
       <option value="Junior">Junior</option>
@@ -24,15 +25,39 @@
     <br>
     <br>
     <br>
-    <label for="">description</label>
+    <p for="">description</p>
     <input name="description" />
     <br>
     <br>
     <br>
     
-    <label for="">responsibility</label>
+    <p for="">responsibility</p>
     <textarea name="responsibility" rows="10" cols="60"></textarea>
-    <button  >OK</button>
+    <br>
+    <br>
+    <br>
+    <p for="">qualification</p>
+    <textarea name="qualification" rows="10" cols="60"></textarea>
+    <br>
+    <br>
+    <br>
+    <p for="">skill</p>
+    <textarea name="skill" rows="10" cols="60"></textarea>
+    <br>
+    <br>
+    <br>
+    <p for="">location</p>
+    <textarea name="location" rows="10" cols="60"></textarea>
+    <p for="">fresh_grad</p>
+    <select name="fresh_grad" id="">
+      <br>
+      <br>
+      <br>
+      <option [ngValue]="true">true</option>
+      <option [ngValue]="false">false</option>
+    </select>
+    <br>
+    <button  >>>>OK</button>
   </form>
   </div>
 </body>
